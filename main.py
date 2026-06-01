@@ -65,12 +65,12 @@ def save_results(results):
         df.to_excel(writer, sheet_name="Pogoda", index=False)
         ws = writer.sheets["Pogoda"]
         ws.column_dimensions["A"].width = 20
-        ws.column_dimensions["B"].width = 8
+        ws.column_dimensions["B"].width = 10
         ws.column_dimensions["C"].width = 18
         ws.column_dimensions["D"].width = 18
         ws.column_dimensions["E"].width = 16
         ws.column_dimensions["F"].width = 14
-        ws.column_dimensions["G"].width = 25
+        ws.column_dimensions["G"].width = 26
     print("Zapisano do data/pogoda.xlsx")
 
     return df
